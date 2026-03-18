@@ -1,0 +1,19 @@
+/*
+ * Systick.h
+ *
+ *  Created on: Mar 14, 2026
+ *      Author: Suman Gayen
+ */
+
+#ifndef SYSTICK_H_
+#define SYSTICK_H_
+#include "stm32f446xx.h"
+
+#define Timer_Load 1600
+
+extern void Systick_init(void); // Initialize the Systick Timer on ARM-Cortex M
+extern unsigned long get_tick(void); // get_tick will give actual counter value of Systick at that moment of calling this func
+extern void delay_ms(unsigned long); // delay is help to produce exact amount producing delay
+
+
+#endif /* SYSTICK_H_ */

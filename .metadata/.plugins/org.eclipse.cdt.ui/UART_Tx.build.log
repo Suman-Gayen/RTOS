@@ -1,0 +1,18 @@
+08:23:24 **** Incremental Build of configuration Debug for project UART_Tx ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Core/Include" -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Core/Include" -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart.o"
+arm-none-eabi-gcc -o "UART_Tx.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Suman Gayen\OneDrive\Desktop\STM32\Github\RTOS\UART_Tx\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_Tx.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_Tx.elf
+ 
+arm-none-eabi-size  UART_Tx.elf 
+arm-none-eabi-objdump -h -S UART_Tx.elf  > "UART_Tx.list"
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	UART_Tx.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_Tx.list
+ 
+
+08:23:25 Build Finished. 0 errors, 0 warnings. (took 1s.410ms)
+

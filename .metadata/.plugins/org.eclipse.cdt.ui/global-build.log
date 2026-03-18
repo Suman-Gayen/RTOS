@@ -1,0 +1,173 @@
+17:37:42 **** Incremental Build of configuration Debug for project Systick_Timer ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/Systick.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Core/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/Systick.d" -MT"Src/Systick.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/Systick.o"
+arm-none-eabi-gcc "../Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Core/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/led.d" -MT"Src/led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/led.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Core/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Systick_Timer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Suman Gayen\OneDrive\Desktop\STM32\Github\RTOS\Systick_Timer\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Systick_Timer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Systick_Timer.elf
+ 
+arm-none-eabi-size  Systick_Timer.elf 
+arm-none-eabi-objdump -h -S Systick_Timer.elf  > "Systick_Timer.list"
+   text	   data	    bss	    dec	    hex	filename
+    928	      4	   1572	   2504	    9c8	Systick_Timer.elf
+Finished building: default.size.stdout
+ 
+Finished building: Systick_Timer.list
+ 
+17:38:07 **** Incremental Build of configuration Debug for project Systick_Timer ****
+make -j12 all 
+arm-none-eabi-size  Systick_Timer.elf 
+   text	   data	    bss	    dec	    hex	filename
+    928	      4	   1572	   2504	    9c8	Systick_Timer.elf
+Finished building: default.size.stdout
+ 
+17:38:41 **** Incremental Build of configuration Debug for project Systick_Timer ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Core/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Systick_Timer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Suman Gayen\OneDrive\Desktop\STM32\Github\RTOS\Systick_Timer\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Systick_Timer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Systick_Timer.elf
+ 
+arm-none-eabi-size  Systick_Timer.elf 
+arm-none-eabi-objdump -h -S Systick_Timer.elf  > "Systick_Timer.list"
+   text	   data	    bss	    dec	    hex	filename
+    928	      4	   1572	   2504	    9c8	Systick_Timer.elf
+Finished building: default.size.stdout
+ 
+Finished building: Systick_Timer.list
+ 
+17:40:31 **** Incremental Build of configuration Debug for project Systick_Timer ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Core/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Systick_Timer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Suman Gayen\OneDrive\Desktop\STM32\Github\RTOS\Systick_Timer\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Systick_Timer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Systick_Timer.elf
+ 
+arm-none-eabi-size  Systick_Timer.elf 
+arm-none-eabi-objdump -h -S Systick_Timer.elf  > "Systick_Timer.list"
+   text	   data	    bss	    dec	    hex	filename
+   1088	      4	   1572	   2664	    a68	Systick_Timer.elf
+Finished building: default.size.stdout
+ 
+Finished building: Systick_Timer.list
+ 
+17:40:49 **** Incremental Build of configuration Debug for project Systick_Timer ****
+make -j12 all 
+arm-none-eabi-size  Systick_Timer.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1088	      4	   1572	   2664	    a68	Systick_Timer.elf
+Finished building: default.size.stdout
+ 
+17:44:53 **** Incremental Build of configuration Debug for project Systick_Timer ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/Systick.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Core/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/Systick.d" -MT"Src/Systick.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/Systick.o"
+arm-none-eabi-gcc -o "Systick_Timer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Suman Gayen\OneDrive\Desktop\STM32\Github\RTOS\Systick_Timer\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Systick_Timer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Systick_Timer.elf
+ 
+arm-none-eabi-size  Systick_Timer.elf 
+arm-none-eabi-objdump -h -S Systick_Timer.elf  > "Systick_Timer.list"
+   text	   data	    bss	    dec	    hex	filename
+   1088	      4	   1572	   2664	    a68	Systick_Timer.elf
+Finished building: default.size.stdout
+ 
+Finished building: Systick_Timer.list
+ 
+17:45:33 **** Incremental Build of configuration Debug for project Systick_Timer ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/Systick.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Core/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/Systick.d" -MT"Src/Systick.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/Systick.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Core/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Systick_Timer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Suman Gayen\OneDrive\Desktop\STM32\Github\RTOS\Systick_Timer\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Systick_Timer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Systick_Timer.elf
+ 
+arm-none-eabi-size  Systick_Timer.elf 
+arm-none-eabi-objdump -h -S Systick_Timer.elf  > "Systick_Timer.list"
+   text	   data	    bss	    dec	    hex	filename
+   1088	      4	   1572	   2664	    a68	Systick_Timer.elf
+Finished building: default.size.stdout
+ 
+Finished building: Systick_Timer.list
+ 
+17:45:56 **** Incremental Build of configuration Debug for project Systick_Timer ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/Systick.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Core/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/Systick.d" -MT"Src/Systick.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/Systick.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Core/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Systick_Timer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Suman Gayen\OneDrive\Desktop\STM32\Github\RTOS\Systick_Timer\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Systick_Timer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Systick_Timer.elf
+ 
+arm-none-eabi-size  Systick_Timer.elf 
+arm-none-eabi-objdump -h -S Systick_Timer.elf  > "Systick_Timer.list"
+   text	   data	    bss	    dec	    hex	filename
+   1088	      4	   1572	   2664	    a68	Systick_Timer.elf
+Finished building: default.size.stdout
+ 
+Finished building: Systick_Timer.list
+ 
+17:47:13 **** Incremental Build of configuration Debug for project Systick_Timer ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/Systick.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Core/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/Systick.d" -MT"Src/Systick.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/Systick.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Core/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Systick_Timer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Suman Gayen\OneDrive\Desktop\STM32\Github\RTOS\Systick_Timer\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Systick_Timer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Systick_Timer.elf
+ 
+arm-none-eabi-size  Systick_Timer.elf 
+arm-none-eabi-objdump -h -S Systick_Timer.elf  > "Systick_Timer.list"
+   text	   data	    bss	    dec	    hex	filename
+   1088	      4	   1572	   2664	    a68	Systick_Timer.elf
+Finished building: default.size.stdout
+ 
+Finished building: Systick_Timer.list
+ 
+17:49:27 **** Incremental Build of configuration Debug for project Systick_Timer ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Core/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Systick_Timer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Suman Gayen\OneDrive\Desktop\STM32\Github\RTOS\Systick_Timer\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Systick_Timer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Systick_Timer.elf
+ 
+arm-none-eabi-size  Systick_Timer.elf 
+arm-none-eabi-objdump -h -S Systick_Timer.elf  > "Systick_Timer.list"
+   text	   data	    bss	    dec	    hex	filename
+   1088	      4	   1572	   2664	    a68	Systick_Timer.elf
+Finished building: default.size.stdout
+ 
+Finished building: Systick_Timer.list
+ 
+17:50:16 **** Incremental Build of configuration Debug for project Systick_Timer ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Suman Gayen/OneDrive/Desktop/STM32/stm32F4_header/CMSIS/Core/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Systick_Timer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Suman Gayen\OneDrive\Desktop\STM32\Github\RTOS\Systick_Timer\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Systick_Timer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Systick_Timer.elf
+ 
+arm-none-eabi-size  Systick_Timer.elf 
+arm-none-eabi-objdump -h -S Systick_Timer.elf  > "Systick_Timer.list"
+   text	   data	    bss	    dec	    hex	filename
+   1088	      4	   1572	   2664	    a68	Systick_Timer.elf
+Finished building: default.size.stdout
+ 
+Finished building: Systick_Timer.list
+ 
+19:28:13 **** Incremental Build of configuration Debug for project Systick_Timer ****
+make -j12 all 
+arm-none-eabi-size  Systick_Timer.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1088	      4	   1572	   2664	    a68	Systick_Timer.elf
+Finished building: default.size.stdout
+ 
+19:51:42 **** Incremental Build of configuration Debug for project Systick_Timer ****
+make -j12 all 
+arm-none-eabi-size  Systick_Timer.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1088	      4	   1572	   2664	    a68	Systick_Timer.elf
+Finished building: default.size.stdout
+ 
+19:53:45 **** Incremental Build of configuration Debug for project Systick_Timer ****
+make -j12 all 
+arm-none-eabi-size  Systick_Timer.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1088	      4	   1572	   2664	    a68	Systick_Timer.elf
+Finished building: default.size.stdout
+ 
+19:53:53 **** Incremental Build of configuration Debug for project Systick_Timer ****
+make -j12 all 
+arm-none-eabi-size  Systick_Timer.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1088	      4	   1572	   2664	    a68	Systick_Timer.elf
+Finished building: default.size.stdout
+ 
